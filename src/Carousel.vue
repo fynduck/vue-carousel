@@ -20,9 +20,7 @@
           'webkit-flex-basis': `${slideWidth}px`,
           'flex-basis': `${slideWidth}px`,
           'visibility': slideWidth ? 'visible' : 'hidden',
-          'height': `${currentHeight}`,
-          'padding-left': `${padding}px`,
-          'padding-right': `${padding}px`
+          'height': `${currentHeight}`
         }"
       >
         <slot></slot>
