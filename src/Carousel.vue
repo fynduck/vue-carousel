@@ -446,9 +446,9 @@ export default {
       if (this.isCenterModeEnabled) {
         return 0;
       } else if (this.rtl) {
-        return (this.offset - this.dragOffset) * 1;
+        return (this.offset - this.dragOffset + (this.spacePadding / 2)) * 1;
       } else {
-        return (this.offset + this.dragOffset) * -1;
+        return (this.offset + this.dragOffset + (this.spacePadding / 2)) * -1;
       }
     },
     isHidden() {
